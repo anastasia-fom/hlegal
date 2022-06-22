@@ -1,0 +1,15 @@
+.banner {
+  @media (max-width: 1115px) {
+    &:before {
+      background-size: cover;
+    }
+  }
+
+
+  @include desktop-sm() {
+    h1 {
+      font-size: 6.8vh;
+      line-height: 75px;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+body{
+  @extend %font-montserrat-regular;
+  color: $main-color;
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
+h1{
+  @extend %font-montserrat-bold;
+  font-size: $font-size-2xl;
+  line-height: 46px;
+  color: $text-gradient;
+}
+
+h2{
+  @extend %font-montserrat-bold;
+  font-size: $font-size-xl;
+  line-height: 37px;
+}
+
+h3{
+  @extend %font-montserrat-bold;
+  font-size: $font-size-lg;
+  line-height: 27px;
+}
+
+h4{
+  @extend %font-montserrat-bold;
+  font-size: $font-size-sm;
+  line-height: 20px;
+}
+
+p{
+  font-size: $font-size-sm;
+  line-height: 26px;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+
+  &:not(.social-link) {
+    border-bottom: 2px solid transparent;
+    padding-bottom: 3px;
+
+    &:hover {
+      color: $main-font-color;
+      border-bottom-color: initial;
+      transition: $default-transition;
+    }
+
+    &:active {
+      color: $accent-color;
+      border-bottom-color: initial;
+      transition: $default-transition;
+    }
+  }
+
+  &.social-link {
+    path {
+      fill: $main-font-color;
+    }
+
+    &:hover {
+      path {
+        fill: $accent-color;
+        transition: $default-transition;
+      }
+    }
+  }
+}
+
+.common-bg{
+  background: $supersoft-gradient;
+}
