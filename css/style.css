@@ -18,7 +18,7 @@ body {
   font-weight: normal;
 }
 
-.benefits__item li, .section__title .section__link, h4, h3, h2, h1 {
+.clients p, .benefits__item li, .section__title .section__link, h4, h3, h2, h1 {
   font-family: Montserrat, sans-serif;
   font-weight: bold;
 }
@@ -539,6 +539,71 @@ a {
   .team h2 {
     font-size: 30px;
     word-wrap: break-word;
+  }
+}
+
+.clients p {
+  text-transform: uppercase;
+  color: #323264;
+  text-align: center;
+}
+.clients__items {
+  margin-top: 30px;
+  border-radius: 12px;
+}
+.clients__items a {
+  display: flex;
+  justify-content: center;
+}
+.clients__items-section {
+  width: 25%;
+  height: 120px;
+}
+.clients__items-section-hillel {
+  background-color: #1C4280;
+}
+.clients__items-section-wannabiz {
+  background-color: #143646;
+}
+.clients__items-section-tapgerine {
+  background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30;
+}
+.clients__items-section-3dlook {
+  background-color: #9E4DC3;
+}
+.clients__items-section-orangear {
+  background-color: #FD9339;
+}
+.clients__items-section-adtelligent {
+  background-color: #E2E2E4;
+}
+.clients__items-section-clikky {
+  background-color: #C71C36;
+}
+.clients__items-section-ecolease {
+  background-color: #DCF3F9;
+}
+.clients__items-section-infatek {
+  background-color: #EAEAEA;
+}
+.clients__items-section-city {
+  background-color: #282240;
+}
+.clients__items-section-art {
+  background-color: #1D4568;
+}
+.clients__items-section-ultimatecard {
+  background-color: #000000;
+}
+
+@media (max-width: 768px) {
+  .clients__items-section {
+    width: 33.3333333333%;
+  }
+}
+@media (max-width: 575px) {
+  .clients__items-section {
+    width: 100%;
   }
 }
 

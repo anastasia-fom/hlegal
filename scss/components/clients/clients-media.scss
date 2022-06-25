@@ -1,0 +1,17 @@
+.clients{
+    @include desktop-md(){
+      &__items{
+        &-section{
+          width: calc(100% / 3);
+        }
+      }
+    }
+
+  @include desktop-sm(){
+    &__items{
+      &-section{
+        width: 100%;
+      }
+    }
+  }
+}

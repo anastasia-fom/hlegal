@@ -1,0 +1,69 @@
+.clients{
+  p{
+    @extend %font-montserrat-bold;
+    text-transform: uppercase;
+    color: #323264;
+    text-align: center;
+  }
+  &__items{
+    margin-top: 30px;
+    border-radius: 12px;
+    a{
+      display: flex;
+      justify-content: center;
+    }
+
+    &-section{
+      width: calc(100% / 4);
+      height: 120px;
+    }
+
+    &-section-hillel{
+      background-color: #1C4280;
+    }
+
+    &-section-wannabiz{
+      background-color: #143646;
+    }
+
+    &-section-tapgerine{
+      background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30;
+    }
+
+    &-section-3dlook{
+      background-color: #9E4DC3;
+    }
+
+    &-section-orangear{
+      background-color: #FD9339;
+    }
+
+    &-section-adtelligent{
+      background-color: #E2E2E4;
+    }
+
+    &-section-clikky{
+      background-color: #C71C36;
+    }
+
+    &-section-ecolease{
+      background-color: #DCF3F9;
+    }
+
+    &-section-infatek{
+      background-color: #EAEAEA;
+    }
+
+    &-section-city{
+      background-color: #282240;
+    }
+
+    &-section-art{
+      background-color: #1D4568;
+    }
+
+    &-section-ultimatecard{
+      background-color: #000000;
+    }
+  }
+}
