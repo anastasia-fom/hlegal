@@ -48,39 +48,48 @@ a {
   background: $supersoft-gradient;
 }
 
-.section__link{
-  @extend %font-montserrat-bold;
-  font-size: $font-size-xs;
-  color: $link-color;
-  line-height: 17px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  &:hover{
-    color: $accent-color;
-  }
+.section__title{
+  .section__link{
+    @extend %font-montserrat-bold;
+    font-size: $font-size-xs;
+    color: $link-color;
+    line-height: 17px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    &:hover{
+      color: $accent-color;
+    }
+    svg{
+      margin-top: -3px;
+      &:hover {
+        text-decoration: none;
+        border: none;
 
-  svg{
-    margin-top: -3px;
-    &:hover {
-      text-decoration: none;
-      border: none;
+        circle {
+          stroke: $accent-color;
+        }
 
-      circle {
-        stroke: $accent-color;
-      }
+        path {
+          stroke: $accent-color;
+        }
 
-      path {
-        stroke: $accent-color;
-      }
-
-      circle,
-      path {
-        transition: $default-transition;
+        circle,
+        path {
+          transition: $default-transition;
+        }
       }
     }
   }
+
+  h2{
+    margin-top: 10px;
+    line-height: 46px;
+    font-size: $font-size-2xl;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
 }
 
-.services__title{
-
-}

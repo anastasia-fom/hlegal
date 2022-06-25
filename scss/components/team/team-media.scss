@@ -1,0 +1,17 @@
+.team{
+  @include desktop-md(){
+    padding: 60px;
+    &__wrapper{
+      flex-direction: column;
+    }
+  }
+
+  @include desktop-sm(){
+    padding: 30px;
+    h2{
+      font-size: $font-size-xl;
+      word-wrap: break-word;
+    }
+  }
+
+}
