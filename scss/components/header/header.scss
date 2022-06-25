@@ -8,6 +8,38 @@
   left: 0;
   z-index: 1;
 
+  a{
+    &:not(.social-link) {
+      border-bottom: 2px solid transparent;
+      padding-bottom: 3px;
+
+      &:hover {
+        color: $main-font-color;
+        border-bottom-color: initial;
+        transition: $default-transition;
+      }
+
+      &:active {
+        color: $accent-color;
+        border-bottom-color: initial;
+        transition: $default-transition;
+      }
+    }
+
+    &.social-link {
+      path {
+        fill: $main-font-color;
+      }
+
+      &:hover {
+        path {
+          fill: $accent-color;
+          transition: $default-transition;
+        }
+      }
+    }
+  }
+
 
   .container {
     position: relative;

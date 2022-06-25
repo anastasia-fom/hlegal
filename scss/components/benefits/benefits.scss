@@ -1,0 +1,61 @@
+.benefits{
+  padding: 60px 0;
+  color: #FFFFFF;
+  &__item{
+    li{
+      list-style-type: none;
+      @extend %font-montserrat-bold;
+
+      &:not(:last-child){
+        margin-bottom: 20px;
+      }
+      .active{
+        background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+
+      a{
+        :not(.social-link){
+          border-bottom: none;
+          transition: none;
+        }
+        font-size: $font-size-2xl;
+        line-height: 46px;
+        text-align: right;
+        color: #B3B3BA;
+
+        &:not(.social-link):hover{
+          color: $accent-color;
+          border: none;
+          transition: none;
+        }
+
+        &:not(.social-link):active{
+          border: none;
+          transition: none;
+        }
+      }
+    }
+  }
+
+  &__line{
+    border-left: 4px solid rgba(255, 255, 255, 0.3);
+    height: 303px;
+    margin-left: 60px;
+  }
+
+  &__description{
+    p{
+      color: #FFFFFF;
+      max-width: 514px;;
+      font-size: 19px;
+      line-height: 30px;
+      margin-top: 30px;
+    }
+  }
+
+
+}
