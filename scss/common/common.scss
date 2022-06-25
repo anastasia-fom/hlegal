@@ -42,10 +42,45 @@ p{
 
 a {
   text-decoration: none;
-
-
 }
 
 .common-bg{
   background: $supersoft-gradient;
+}
+
+.section__link{
+  @extend %font-montserrat-bold;
+  font-size: $font-size-xs;
+  color: $link-color;
+  line-height: 17px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  &:hover{
+    color: $accent-color;
+  }
+
+  svg{
+    margin-top: -3px;
+    &:hover {
+      text-decoration: none;
+      border: none;
+
+      circle {
+        stroke: $accent-color;
+      }
+
+      path {
+        stroke: $accent-color;
+      }
+
+      circle,
+      path {
+        transition: $default-transition;
+      }
+    }
+  }
+}
+
+.services__title{
+
 }

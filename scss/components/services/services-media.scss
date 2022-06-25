@@ -1,0 +1,27 @@
+.services{
+  @include desktop-lg(){
+    &__items{
+      p{
+        width: initial;
+      }
+    }
+  }
+
+  @include desktop-md(){
+    padding: 60px;
+    &__items{
+      &-section{
+        width: 40%;
+      }
+    }
+  }
+
+  @include desktop-sm(){
+    padding: 30px;
+    &__items{
+      &-section{
+        width: 100%;
+      }
+    }
+  }
+}
