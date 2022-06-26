@@ -1,5 +1,6 @@
 .clients{
     @include desktop-md(){
+      margin-top: 60px;
       &__items{
         &-section{
           width: calc(100% / 3);
