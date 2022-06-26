@@ -451,6 +451,15 @@ a {
   row-gap: 60px;
   column-gap: 60px;
 }
+.services__items-icon {
+  width: 92px;
+  height: 92px;
+  background-color: #FFFFFF;
+  border-radius: 24px;
+}
+.services__items-icon img {
+  width: 64px;
+}
 .services__items-section img {
   border-radius: 24px;
 }
