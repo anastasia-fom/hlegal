@@ -1,0 +1,21 @@
+.publications{
+
+  @include desktop-lg{
+    &__contetn{
+      &__article{
+        max-width: calc(100% / 3);
+      }
+    }
+  }
+
+  @include desktop-md(){
+    &__content{
+      flex-wrap: wrap;
+
+      &__article{
+        max-width: calc(100% / 3);
+      }
+    }
+  }
+
+}
