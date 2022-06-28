@@ -16,6 +16,11 @@
     &-section{
       width: calc(100% / 4);
       height: 120px;
+      transition: transform .2s;
+      
+      &:hover {
+        transform: scale(1.1);
+      }
     }
 
     &-section-hillel{

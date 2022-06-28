@@ -567,6 +567,10 @@ a {
 .clients__items-section {
   width: 25%;
   height: 120px;
+  transition: transform 0.2s;
+}
+.clients__items-section:hover {
+  transform: scale(1.1);
 }
 .clients__items-section-hillel {
   background-color: #1C4280;
