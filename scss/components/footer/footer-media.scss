@@ -1,9 +1,16 @@
 .footer{
-    @include desktop-sm(){
+    @include desktop-md(){
       &__position{
         flex-direction: column;
         align-items: center;
       }
+
+      &__info{
+        margin-top: 30px;
+      }
+    }
+
+    @include desktop-sm(){
 
       &__address{
         flex-direction: column;
@@ -28,10 +35,6 @@
               }
             }
         }
-      }
-
-      &__info{
-        margin-top: 30px;
       }
     }
 }

@@ -50,10 +50,32 @@
     &-tel {
       color: #46466E;
     }
+
+    &-mail{
+      &:hover{
+        color: $accent-color;
+        transition: $default-transition;
+      }
+    }
   }
 
   &__info{
     font-size: $font-size-sm;
     color: $text-color;
+  }
+
+  a{
+    &.social-link{
+      path {
+        fill: $link-color;
+      }
+
+      &:hover {
+        path {
+          fill: $accent-color;
+          transition: $default-transition;
+        }
+      }
+    }
   }
 }

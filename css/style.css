@@ -730,16 +730,32 @@ a {
 .footer__contact-tel {
   color: #46466E;
 }
+.footer__contact-mail:hover {
+  color: #F0145A;
+  transition: 0.3s;
+}
 .footer__info {
   font-size: 16px;
   color: #B3B3BA;
 }
+.footer a.social-link path {
+  fill: #24A3FF;
+}
+.footer a.social-link:hover path {
+  fill: #F0145A;
+  transition: 0.3s;
+}
 
-@media (max-width: 575px) {
+@media (max-width: 768px) {
   .footer__position {
     flex-direction: column;
     align-items: center;
   }
+  .footer__info {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 575px) {
   .footer__address {
     flex-direction: column;
     align-items: center;
@@ -754,9 +770,6 @@ a {
   }
   .footer__content > div:not(:last-child)::after {
     content: none;
-  }
-  .footer__info {
-    margin-top: 30px;
   }
 }
 
