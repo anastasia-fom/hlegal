@@ -1,0 +1,59 @@
+.footer{
+  padding: 30px 0;
+  background-color: $bg-color;
+  &__address{
+    $x-offset: 10px;
+    gap: $x-offset;
+    margin-bottom: 21px;
+
+    &-map{
+      text-transform: uppercase;
+      @extend %font-montserrat-bold;
+      font-size: $font-size-xxs;
+      letter-spacing: 1px;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        background-color: $text-color;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__content {
+    & > div {
+      $x-offset: 10px;
+      display: flex;
+      align-items: center;
+      gap: $x-offset;
+
+      &:not(:last-child) {
+        &::after {
+          content: "";
+          display: inline-block;
+          width: 6px;
+          height: 6px;
+          background-color: $text-color;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  &__contact {
+    @extend %font-montserrat-bold;
+
+    &-tel {
+      color: #46466E;
+    }
+  }
+
+  &__info{
+    font-size: $font-size-sm;
+    color: $text-color;
+  }
+}
