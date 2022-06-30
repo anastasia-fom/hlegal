@@ -166,6 +166,8 @@
     color: $text-color;
     --bs-link-color: #{$text-color};
     background-color: $main-font-color;
+    position: initial;
+    padding: 50px 0 60px 0;
 
     &__lang {
       &-switcher:checked + &-name {
