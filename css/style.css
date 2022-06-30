@@ -209,6 +209,39 @@ a {
 .header__navigation .nav-link.active {
   color: #F0145A;
 }
+.header a.navbar-brand {
+  border-bottom: none;
+}
+.header-light {
+  color: #B3B3BA;
+  --bs-link-color: #B3B3BA;
+  background-color: #fff;
+}
+.header-light__lang-switcher:checked + .header-light__lang-name {
+  color: #fff;
+}
+.header-light__top-content > div:not(:last-child):after {
+  background-color: #E6E6F0;
+}
+.header-light .nav-link {
+  color: #24A3FF;
+}
+.header-light .nav-link.active {
+  border-bottom: 2px solid #F0145A;
+}
+.header-light .nav-link:hover {
+  color: #24A3FF;
+}
+.header-light a:not(.social-link):hover {
+  color: #24A3FF;
+}
+.header-light a.social-link path {
+  fill: #B3B3BA;
+}
+.header-light a.social-link:hover path {
+  fill: #F0145A;
+  transition: 0.3s;
+}
 
 @media (max-width: 768px) {
   .header {

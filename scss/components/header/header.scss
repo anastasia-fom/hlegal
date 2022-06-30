@@ -8,7 +8,7 @@
   left: 0;
   z-index: 1;
 
-  a{
+  a {
     &:not(.social-link) {
       border-bottom: 2px solid transparent;
       padding-bottom: 3px;
@@ -154,6 +154,67 @@
 
       &.active {
         color: $accent-color;
+      }
+    }
+  }
+
+  a.navbar-brand{
+    border-bottom: none;
+  }
+
+  &-light {
+    color: $text-color;
+    --bs-link-color: #{$text-color};
+    background-color: $main-font-color;
+
+    &__lang {
+      &-switcher:checked + &-name {
+        color: $main-font-color;
+      }
+    }
+
+    &__top {
+      &-content {
+        & > div {
+          &:not(:last-child) {
+            &:after {
+              background-color: $separator-color;
+            }
+          }
+        }
+      }
+    }
+
+    .nav-link {
+      color: $link-color;
+
+      &.active {
+        border-bottom: 2px solid $accent-color;
+      }
+
+      &:hover {
+        color: $link-color;
+      }
+    }
+
+    a {
+      &:not(.social-link) {
+        &:hover {
+          color: $link-color;
+        }
+      }
+
+      &.social-link {
+        path {
+          fill: $text-color;
+        }
+
+        &:hover {
+          path {
+            fill: $accent-color;
+            transition: $default-transition;
+          }
+        }
       }
     }
   }
