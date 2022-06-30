@@ -246,11 +246,23 @@ a {
     width: 50px;
     height: 50px;
   }
+  .header .navbar-toggler:active {
+    background-color: #E6E6F0;
+    border-radius: 8px;
+  }
   .header .navbar-toggler,
 .header .navbar-toggler:focus {
     border: none;
     outline: none;
     box-shadow: none;
+  }
+  .header .navbar-collapse {
+    background-color: #FFFFFF;
+    border-radius: 12px 12px 0px 0px;
+  }
+  .header .navbar-collapse ul li {
+    background-color: #F5F5FA;
+    border-radius: 12px;
   }
   .header__top .header__address, .header__top .header__social {
     display: none;

@@ -44,11 +44,28 @@
       height: 50px;
     }
 
+    .navbar-toggler:active{
+        background-color: $separator-color;
+        border-radius: 8px;
+    }
+
     .navbar-toggler,
     .navbar-toggler:focus {
       border: none;
       outline: none;
-      box-shadow: none
+      box-shadow: none;
+    }
+
+    .navbar-collapse{
+      background-color: #FFFFFF;
+      border-radius: 12px 12px 0px 0px;
+
+      ul{
+        li{
+          background-color: $bg-color;
+          border-radius: 12px;
+        }
+      }
     }
 
     &__top &__address,
