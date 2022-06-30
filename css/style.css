@@ -713,6 +713,10 @@ a {
   border-radius: 50%;
   margin-right: 10px;
 }
+.footer__address-map:hover {
+  color: #F0145A;
+  transition: 0.3s;
+}
 .footer__content > div {
   display: flex;
   align-items: center;
