@@ -1,0 +1,31 @@
+.service-entry{
+   @include desktop-md(){
+
+     &__description{
+       padding-top: 280px;
+     }
+   }
+
+  @include desktop-sm(){
+    padding: 30px;
+    &__description{
+      padding-top: 162px;
+    }
+
+    &__item{
+      &-section{
+        h1{
+          font-size: $font-size-xl;
+          line-height: 37px;
+          text-align: center;
+        }
+      }
+    }
+
+    &__content{
+        li{
+          width: 100%!important;
+        }
+      }
+  }
+}
