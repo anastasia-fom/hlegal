@@ -22,11 +22,6 @@
     background-color: #FFFFFF;
     border-radius: 8px;
     width: calc(100% / 3 - #{$gap});
-    transition: transform .2s;
-
-    &:hover {
-      transform: scale(1.1);
-    }
 
     &-img {
       background-size: 100% 200px;
@@ -45,6 +40,10 @@
       h4 {
         color: $link-color;
         line-height: 20px;
+
+        &:hover{
+          color: $accent-color;
+        }
       }
 
       p {
@@ -66,11 +65,13 @@
 
   &__type {
     background-color: $separator-color;
-    padding: 8px 5px 8px 3px;
+    padding: 8px 4px 10px 4px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
-    max-width: 233px;
+    box-sizing:border-box;
+    width:auto;
+    max-width:100%;
     &-switcher {
       display: none;
 
@@ -85,6 +86,8 @@
       @extend %font-montserrat-bold;
       border-radius: 10px;
 
+
+
       &:hover,
       &:focus {
         background-color: rgba(255, 255, 255, 0.2);
@@ -96,6 +99,22 @@
     &-switcher:checked + &-name {
       background-color: #FFFFFF;
       transition: $default-transition;
+    }
+  }
+
+  &__button{
+    margin-top: 30px;
+    input[type="button"]{
+      color: $main-font-color;
+      background-color: $link-color;
+      box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
+      border-radius: 12px;
+      border: none;
+      padding: 18px 30px;
+
+      &:hover{
+        background-color: $hover-color;
+      }
     }
   }
 }

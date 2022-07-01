@@ -245,7 +245,7 @@ a {
   transition: 0.3s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .header {
     padding-top: 30px;
   }
@@ -438,7 +438,7 @@ a {
     width: 358px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .benefits {
     padding: 60px;
   }
@@ -526,7 +526,7 @@ a {
     width: initial;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .services {
     padding: 60px;
   }
@@ -580,7 +580,7 @@ a {
   margin-bottom: -60px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .team {
     padding: 60px;
   }
@@ -656,7 +656,7 @@ a {
   background-color: #000000;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .clients {
     margin-top: 60px;
   }
@@ -690,10 +690,6 @@ a {
   background-color: #FFFFFF;
   border-radius: 8px;
   width: calc(100% / 3 - 30px);
-  transition: transform 0.2s;
-}
-.publications__article:hover {
-  transform: scale(1.1);
 }
 .publications__article-img {
   background-size: 100% 200px;
@@ -711,6 +707,9 @@ a {
   color: #24A3FF;
   line-height: 20px;
 }
+.publications__article-title h4:hover {
+  color: #F0145A;
+}
 .publications__article-title p {
   color: #B3B3BA;
   text-transform: uppercase;
@@ -725,11 +724,13 @@ a {
 }
 .publications__type {
   background-color: #E6E6F0;
-  padding: 8px 5px 8px 3px;
+  padding: 8px 4px 10px 4px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
-  max-width: 233px;
+  box-sizing: border-box;
+  width: auto;
+  max-width: 100%;
 }
 .publications__type-switcher {
   display: none;
@@ -751,18 +752,34 @@ a {
   background-color: #FFFFFF;
   transition: 0.3s;
 }
+.publications__button {
+  margin-top: 30px;
+}
+.publications__button input[type=button] {
+  color: #fff;
+  background-color: #24A3FF;
+  box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  border: none;
+  padding: 18px 30px;
+}
+.publications__button input[type=button]:hover {
+  background-color: #0085FF;
+}
 
 @media (max-width: 1024px) {
-  .publications__contetn__article {
-    max-width: 33.3333333333%;
+  .publications__article {
+    width: calc(100% / 3 - 30px);
   }
 }
-@media (max-width: 768px) {
-  .publications__content {
-    flex-wrap: wrap;
+@media (max-width: 992px) {
+  .publications__article {
+    width: calc(100% / 2 - 30px);
   }
-  .publications__content__article {
-    max-width: 33.3333333333%;
+}
+@media (max-width: 575px) {
+  .publications__article {
+    width: 100%;
   }
 }
 
@@ -825,7 +842,7 @@ a {
   transition: 0.3s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .footer__position {
     flex-direction: column;
     align-items: center;

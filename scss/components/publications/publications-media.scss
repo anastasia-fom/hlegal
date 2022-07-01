@@ -1,21 +1,21 @@
 .publications{
+  $gap: 30px;
 
   @include desktop-lg{
-    &__contetn{
       &__article{
-        max-width: calc(100% / 3);
+        width: calc(100% / 3 - #{$gap});
       }
-    }
   }
 
   @include desktop-md(){
-    &__content{
-      flex-wrap: wrap;
-
       &__article{
-        max-width: calc(100% / 3);
+        width: calc(100% / 2 - #{$gap});
       }
-    }
   }
 
+  @include desktop-sm(){
+      &__article{
+        width: 100%;
+      }
+  }
 }

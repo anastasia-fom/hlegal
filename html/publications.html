@@ -108,23 +108,25 @@
             <div class="container">
                 <div class="publications__wrapper">
                     <div class="row">
-                        <div class="publications__type">
+                        <div class="publications__type d-flex">
                             <div class="d-flex justify-content-center align-items-center">
-                                <label>
-                                    <input class="publications__type-switcher" name="type" type="radio" value="news" checked>
-                                    <span class="publications__type-name">news</span>
-                                </label>
+                                <div>
+                                    <label>
+                                        <input class="publications__type-switcher" name="type" type="radio" value="news" checked>
+                                        <span class="publications__type-name">news</span>
+                                    </label>
+                                </div>
 
-                                <label>
-                                    <input class="publications__type-switcher" name="type" type="radio" value="articles">
-                                    <span class="publications__type-name">articles</span>
-                                </label>
-
+                                <div>
+                                    <label>
+                                        <input class="publications__type-switcher" name="type" type="radio" value="articles">
+                                        <span class="publications__type-name">articles</span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
 
-                        <div>
-                            <div class="publications__content row">
+                        <div class="publications__content d-flex flex-wrap">
                                 <article class="publications__article p-0">
                                     <a href="#">
                                         <div class="publications__article-img" style="background-image: url('../assets/img/associate.jpg');"></div>
@@ -170,6 +172,57 @@
                                         </div>
                                     </a>
                                 </article>
+
+                                <article class="publications__article p-0">
+                                    <a href="#">
+                                        <div class="publications__article-img" style="background-image: url('../assets/img/publication4.jpg');"></div>
+                                        <div class="publications__article-description">
+                                            <div class="publications__article-title">
+                                                <h4>Language Law: How to Make Your Website Relevant</h4>
+                                                <p>August 19</p>
+                                            </div>
+
+                                            <p class="publications__article-text">Natalia Kyryk, head of content studio Wordfactory.ua First, it's beautiful!
+                                                This is the number one argument in favor of the Ukrainian-language site. Secondly, it is effective. IN…</p>
+                                        </div>
+                                    </a>
+                                </article>
+
+                                <article class="publications__article p-0">
+                                    <a href="#">
+                                        <div class="publications__article-img" style="background-image: url('../assets/img/publication5.jpg');"></div>
+                                        <div class="publications__article-description">
+                                            <div class="publications__article-title">
+                                                <h4>Reimbursement of the child's tuition fees in kindergarten and school</h4>
+                                                <p>February 5, 2018</p>
+                                            </div>
+
+                                            <p class="publications__article-text">What we are talking about In June this year, the
+                                                Verkhovna Rada amended the Tax Code of Ukraine. From now on, parents who receive an official…</p>
+                                        </div>
+                                    </a>
+                                </article>
+
+                                <article class="publications__article p-0">
+                                    <a href="#">
+                                        <div class="publications__article-description">
+                                            <div class="publications__article-title">
+                                                <h4>Currency control is dead, long live currency control!</h4>
+                                                <p>June 14, 2018</p>
+                                            </div>
+
+                                            <p class="publications__article-text">Experts hold conferences, round tables and other events on "liberalization
+                                                of currency legislation." Lawyers-experts-novelists rub their fingers about "ctrl + c / ctrl + v".</p>
+                                        </div>
+                                    </a>
+                                </article>
+                        </div>
+
+                        <div class="publications__button">
+                            <div class="d-flex justify-content-center">
+                                <label>
+                                    <input type="button" value="More publications">
+                                </label>
                             </div>
                         </div>
                     </div>
