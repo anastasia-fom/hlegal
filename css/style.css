@@ -526,6 +526,9 @@ a {
   margin-bottom: 15px;
   max-width: 251px;
 }
+.services__items-section h3:hover {
+  color: #F0145A;
+}
 .services__items-section p {
   color: #FFFFFF;
   width: 350px;
