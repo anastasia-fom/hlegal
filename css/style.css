@@ -217,7 +217,7 @@ a {
   --bs-link-color: #B3B3BA;
   background-color: #fff;
   position: initial;
-  padding: 50px 0 60px 0;
+  padding: 0 0 30px 0;
 }
 .header-light__lang-switcher:checked + .header-light__lang-name {
   color: #fff;
@@ -320,6 +320,12 @@ a {
   .header__navigation .navbar-brand {
     width: initial;
     margin-bottom: 0;
+  }
+  .header-light .navbar-toggler-icon {
+    background-image: url("../assets/icons/hamburger-dark.svg");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
   }
 }
 
