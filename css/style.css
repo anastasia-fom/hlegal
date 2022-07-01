@@ -67,19 +67,6 @@ a {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   border-radius: 0 0 12px 12px;
 }
-.common-bg::after {
-  content: "";
-  background-color: #CACADB;
-  width: 99%;
-  height: 10px;
-  display: block;
-  border-radius: 0 0 12px 12px;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
 
 .section__title .section__link {
   font-size: 14px;
@@ -543,6 +530,9 @@ a {
   color: #FFFFFF;
   width: 350px;
 }
+.services-page {
+  padding-top: 100px;
+}
 
 @media (max-width: 1024px) {
   .services__items p {
@@ -556,6 +546,9 @@ a {
   .services__items-section {
     width: 40%;
   }
+  .services-page {
+    padding-top: 280px;
+  }
 }
 @media (max-width: 575px) {
   .services {
@@ -563,6 +556,9 @@ a {
   }
   .services__items-section {
     width: 100%;
+  }
+  .services-page {
+    padding-top: 132px;
   }
 }
 
@@ -621,6 +617,9 @@ a {
   }
 }
 
+.clients {
+  margin-top: 60px;
+}
 .clients p {
   text-transform: uppercase;
   color: #323264;
