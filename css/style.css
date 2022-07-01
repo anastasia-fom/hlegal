@@ -65,6 +65,20 @@ a {
 
 .common-bg {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  border-radius: 0 0 12px 12px;
+}
+.common-bg::after {
+  content: "";
+  background-color: #CACADB;
+  width: 99%;
+  height: 10px;
+  display: block;
+  border-radius: 0 0 12px 12px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .section__title .section__link {

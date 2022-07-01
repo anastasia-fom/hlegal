@@ -46,6 +46,21 @@ a {
 
 .common-bg{
   background: $supersoft-gradient;
+  border-radius: 0 0 12px 12px;
+
+  &::after{
+    content: '';
+    background-color: #CACADB;
+    width: 99%;
+    height: 10px;
+    display: block;
+    border-radius: 0 0 12px 12px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
 }
 
 .section__title{
