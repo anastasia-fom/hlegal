@@ -18,7 +18,7 @@ body {
   font-weight: normal;
 }
 
-.article__content-list ol ::marker, .article__content-accent, .article__name p, .footer__contact, .footer__address-map, .publications__type-name, .publications__article-title p, .clients p, .benefits__item li, .section__button input[type=button], .section__title .section__link, h4, h3, h2, h1 {
+.team-people .hero h1, .article__content-list ol ::marker, .article__content-accent, .article__name p, .footer__contact, .footer__address-map, .publications__type-name, .publications__article-title p, .clients p, .benefits__item li, .section__button input[type=button], .section__title .section__link, h4, h3, h2, h1 {
   font-family: Montserrat, sans-serif;
   font-weight: bold;
 }
@@ -1058,6 +1058,62 @@ a {
   .service-entry__content li {
     width: 100% !important;
   }
+}
+
+.team-people {
+  padding: 60px 0;
+}
+@media (min-width: 1080px) {
+  .team-people .hero .container {
+    max-width: 1080px;
+  }
+}
+.team-people .hero h1 {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-size: 38px;
+  line-height: 46px;
+}
+.team-people__list {
+  margin-top: 60px;
+  gap: 60px;
+}
+.team-people__list-item {
+  width: calc(100%/3 - 60px);
+}
+.team-people__list-item img {
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.team-people__list-item h4::after {
+  content: url("../assets/arrow.svg");
+  width: 14px;
+  height: 7px;
+  padding: 9.5px 11.5px 8.5px 13.5px;
+  background-color: #F5F5FA;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: initial;
+}
+.team-people__list-item h4:hover {
+  color: #F0145A;
+}
+.team-people__list-item h4:hover::after {
+  content: url("../assets/arrow-hover.svg");
+  width: 14px;
+  height: 7px;
+}
+.team-people__list-item p {
+  color: #B3B3BA;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 /*# sourceMappingURL=style.css.map */
