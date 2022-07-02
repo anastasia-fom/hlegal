@@ -4,12 +4,6 @@
   }
 }
 
-@mixin desktop-2md(){
-  @media (max-width: 992px) {
-    @content;
-  }
-}
-
 @mixin desktop-md() {
   @media(max-width: 992px) {
     @content;

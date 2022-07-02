@@ -1,0 +1,19 @@
+.team-people{
+  @include desktop-md(){
+    &__list{
+      $gap: 60px;
+      gap: $gap;
+      &-item{
+        width: calc(100%/2 - #{$gap});
+      }
+    }
+  }
+
+  @include desktop-sm(){
+    &__list{
+      &-item{
+        width: 100%;
+      }
+    }
+  }
+}
