@@ -1,0 +1,24 @@
+.hero{
+  @include desktop-md(){
+    padding: 60px;
+    &__wrapper{
+      flex-direction: column;
+    }
+  }
+
+  @include desktop-sm(){
+    padding: 0 30px;
+
+    h1{
+      font-size: $font-size-xl;
+    }
+
+    &__description{
+      font-size: 19px;
+    }
+
+    &__benefints{
+      margin-bottom: 120px;
+    }
+  }
+}
