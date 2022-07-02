@@ -16,7 +16,7 @@
       background-clip: text;
       text-fill-color: transparent;
 
-      font-size: 38px;
+      font-size: $font-size-2xl;
       line-height: 46px;
     }
   }
@@ -44,7 +44,7 @@
           width: 14px;
           height: 7px;
           padding: 9.5px 11.5px 8.5px 13.5px;
-          background-color: #F5F5FA;
+          background-color: $bg-color;
           border-radius: 100%;
 
           display: flex;
@@ -63,13 +63,11 @@
         }
       }
 
-
       p{
-        color: #B3B3BA;
-        font-size: 14px;
+        color:$text-color;
+        font-size: $font-size-xs;
         line-height: 22px;
       }
-
     }
   }
 }
