@@ -344,7 +344,7 @@ a {
     height: 50px;
   }
   .header-light .navbar-brand img {
-    width: 100%;
+    width: 200px;
   }
 }
 
@@ -1129,6 +1129,122 @@ a {
 @media (max-width: 575px) {
   .team-people__list-item {
     width: 100%;
+  }
+}
+
+.person__wrapper {
+  gap: 60px;
+}
+@media (min-width: 1080px) {
+  .person .container {
+    max-width: 1080px;
+  }
+}
+.person__image {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+.person h1 {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.person__information p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.person__information h3 {
+  margin-bottom: 15px;
+}
+.person__information-name {
+  border-bottom: 4px solid #E6E6F0;
+}
+.person__information-name p {
+  margin-top: 0;
+  color: #B3B3BA;
+  font-size: 14px;
+}
+.person__information-contacts {
+  gap: 30px;
+}
+.person__information-contacts a:before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #E6E6F0;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.person__information-contacts a:hover {
+  color: #F0145A;
+}
+
+@media (max-width: 1024px) {
+  .person__image {
+    height: 375px;
+  }
+}
+@media (max-width: 992px) {
+  .person {
+    padding: 60px;
+  }
+  .person__wrapper {
+    flex-direction: column;
+  }
+  .person__image {
+    display: none;
+  }
+  .person__information-name {
+    width: 50%;
+    margin-right: 0;
+    position: relative;
+  }
+  .person__information-name::before {
+    content: " ";
+    width: 300px;
+    height: 375px;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../assets/img/Team-5.jpg");
+    border-radius: 12px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 575px) {
+  .person {
+    padding: 0;
+  }
+  .person__image {
+    display: initial;
+    height: 375px;
+  }
+  .person__information-name {
+    width: 100%;
+  }
+  .person__information-name::before {
+    content: none;
+  }
+  .person__information-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .person__information-contacts p {
+    margin-bottom: 0;
+  }
+  .person__information-contacts a::before {
+    content: none;
+  }
+  .person__information-contacts a:last-child {
+    margin-bottom: 30px;
   }
 }
 

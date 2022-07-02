@@ -1,0 +1,71 @@
+.person{
+  @include desktop-lg(){
+    &__image{
+      height: 375px;
+    }
+  }
+
+  @include desktop-md(){
+    padding: 60px;
+    &__wrapper{
+      flex-direction: column;
+    }
+
+    &__image{
+      display: none;
+    }
+
+    &__information{
+      &-name{
+        width: 50%;
+        margin-right: 0;
+        position: relative;
+        &::before{
+          content: " ";
+          width: 300px;
+          height: 375px;
+          position: absolute;
+          background-size: cover;
+          background-position: center;
+          background-image: url("../assets/img/Team-5.jpg");
+          border-radius: 12px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  @include desktop-sm(){
+    padding: 0;
+    &__image{
+      display: initial;
+      height: 375px;
+    }
+    &__information{
+      &-name {
+      width: 100%;
+        &::before{
+          content: none;
+      }
+      }
+
+      &-contacts{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        p{
+          margin-bottom: 0;
+        }
+        a{
+          &::before{
+            content: none;
+          }
+
+          &:last-child{
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}
