@@ -1,0 +1,19 @@
+.about{
+  @include desktop-lg(){
+    &__content{
+      padding-right: 60px;
+    }
+  }
+
+  @include desktop-md(){
+    padding: 60px;
+  }
+
+  @include desktop-sm(){
+    padding: 30px 30px 60px 30px;
+
+    &__content, &__quote{
+      padding-right: 0;
+    }
+  }
+}

@@ -1267,6 +1267,25 @@ a {
   padding-right: 60px;
 }
 
+@media (max-width: 1024px) {
+  .about__content {
+    padding-right: 60px;
+  }
+}
+@media (max-width: 992px) {
+  .about {
+    padding: 60px;
+  }
+}
+@media (max-width: 575px) {
+  .about {
+    padding: 30px 30px 60px 30px;
+  }
+  .about__content, .about__quote {
+    padding-right: 0;
+  }
+}
+
 .hero {
   padding: 60px 0;
 }
