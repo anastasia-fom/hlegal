@@ -108,6 +108,26 @@ a {
     &:hover{
       background-color: $hover-color;
     }
+
+    &:active{
+      background: $active-color;
+    }
+  }
+}
+
+input{
+  &:focus{
+    border: 1px solid #24A3FF;
+    &::placeholder{
+      color: #000000;
+    }
+  }
+
+  &:invalid{
+    border: 1px solid #FF0000;
+    &::placeholder{
+      color: #FF0000;
+    }
   }
 }
 

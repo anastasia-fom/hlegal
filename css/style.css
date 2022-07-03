@@ -23,6 +23,14 @@ body {
   font-weight: bold;
 }
 
+.contact__form-first h2 {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
 body {
   color: #323264;
 }
@@ -119,6 +127,22 @@ a {
 }
 .section__button input[type=button]:hover {
   background-color: #0085FF;
+}
+.section__button input[type=button]:active {
+  background: #006CCF;
+}
+
+input:focus {
+  border: 1px solid #24A3FF;
+}
+input:focus::placeholder {
+  color: #000000;
+}
+input:invalid {
+  border: 1px solid #FF0000;
+}
+input:invalid::placeholder {
+  color: #FF0000;
 }
 
 .header {
@@ -1439,6 +1463,76 @@ a {
   .achievements__items-one {
     width: 100%;
   }
+}
+
+.contact {
+  padding: 60px 0;
+}
+@media (min-width: 1080px) {
+  .contact .container {
+    max-width: 1080px;
+  }
+}
+.contact__content {
+  gap: 60px;
+}
+.contact__information, .contact__form {
+  width: 50%;
+}
+.contact__information-address {
+  border-bottom: 4px solid #E6E6F0;
+  padding-bottom: 30px;
+}
+.contact__information-media {
+  gap: 15px;
+  border-bottom: 4px solid #E6E6F0;
+  padding: 30px 0;
+}
+.contact__information-social {
+  gap: 10px;
+  padding-top: 30px;
+}
+.contact__form {
+  background-color: #F5F5FA;
+  padding: 30px;
+  border-radius: 12px;
+}
+.contact__form input {
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #FFFFFF;
+  padding: 15px 300px 15px 15px;
+}
+.contact__form input::placeholder {
+  color: #B3B3BA;
+  font-size: 16px;
+  line-height: 26px;
+}
+.contact__form-first h2 {
+  margin-bottom: 30px;
+}
+.contact__form-first textarea {
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #FFFFFF;
+}
+.contact__form-first textarea::placeholder {
+  color: #B3B3BA;
+  font-size: 16px;
+  line-height: 26px;
+}
+.contact__form-second {
+  margin-top: 30px;
+}
+.contact__form-second h3 {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #B3B3BA;
+}
+.contact__form-second .section__button input[type=button] {
+  padding: 18px 163.5px;
 }
 
 /*# sourceMappingURL=style.css.map */
