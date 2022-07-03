@@ -1,0 +1,24 @@
+.achievements{
+  @include desktop-md(){
+    &__items{
+      &-one{
+        img{
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  @include desktop-lg(){
+    &__wrapper{
+      padding: 30px 30px 80px 30px;
+    }
+
+    &__items {
+      flex-direction: column;
+      &-one {
+        width: 100%;
+      }
+    }
+  }
+}
