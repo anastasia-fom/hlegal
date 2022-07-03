@@ -1248,6 +1248,25 @@ a {
   }
 }
 
+.about {
+  padding: 60px 0;
+}
+@media (min-width: 1080px) {
+  .about .container {
+    max-width: 1080px;
+  }
+}
+.about h2 {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.about__quote {
+  padding-right: 60px;
+}
+
 .hero {
   padding: 60px 0;
 }
@@ -1274,6 +1293,7 @@ a {
 }
 .hero__benefints {
   padding-left: 30px;
+  padding-right: 30px;
   border-left: 4px solid #E6E6F0;
   height: 324px;
 }
