@@ -1,0 +1,5 @@
+.modal{
+  @include desktop-sm(){
+    width: 100%;
+  }
+}

@@ -131,9 +131,7 @@
 
                                 <div class="section__button">
                                     <div class="d-flex justify-content-center">
-                                        <label>
-                                            <input type="button" value="Free consultation">
-                                        </label>
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Free consultation</button>
                                     </div>
                                 </div>
                             </div>
@@ -284,6 +282,60 @@
 
 
     </footer>
+    <!-- Modal -->
+    <div class="modal fade p-0" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+
+                    <div class="contact__form">
+                        <form class="contact__form-first">
+                            <div class="d-flex justify-content-between">
+                                <h2>We would like to help you</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                            <div>
+                                <label>
+                                    <input type="text" class="form-control form-name" id="input1" placeholder="Name">
+                                </label>
+
+                            </div>
+
+                            <div>
+                                <label>
+                                    <textarea class="form-control" id="textarea1" rows="4" cols="100" placeholder="Message"></textarea>
+                                </label>
+                            </div>
+                        </form>
+
+                        <form class="contact__form-second">
+                            <h3>
+                                How to answer you?
+                            </h3>
+
+                            <label>
+                                <input type="tel" class="form-control form-number" id="input2" placeholder="Phone number">
+                            </label>
+
+                            <label>
+                                <input type="email" class="form-control form-email" id="input3" placeholder="Email">
+                            </label>
+
+                            <div class="section__button">
+                                <div class="d-flex justify-content-center">
+                                    <label>
+                                        <input type="button" value="Send message">
+                                    </label>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
