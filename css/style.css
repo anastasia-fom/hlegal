@@ -1281,24 +1281,18 @@ input:invalid::placeholder {
   .person__wrapper {
     flex-direction: column;
   }
-  .person__image {
-    display: none;
+  .person__information-contacts {
+    display: flex;
+    flex-direction: column;
   }
-  .person__information-name {
-    width: 50%;
-    margin-right: 0;
-    position: relative;
+  .person__information-contacts p {
+    margin-bottom: 0;
   }
-  .person__information-name::before {
-    content: " ";
-    width: 300px;
-    height: 375px;
-    position: absolute;
-    background-size: cover;
-    background-position: center;
-    background-image: url("../assets/img/Team-5.jpg");
-    border-radius: 12px;
-    margin-bottom: 15px;
+  .person__information-contacts a::before {
+    content: none;
+  }
+  .person__information-contacts a:last-child {
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 575px) {
@@ -1314,20 +1308,6 @@ input:invalid::placeholder {
   }
   .person__information-name::before {
     content: none;
-  }
-  .person__information-contacts {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .person__information-contacts p {
-    margin-bottom: 0;
-  }
-  .person__information-contacts a::before {
-    content: none;
-  }
-  .person__information-contacts a:last-child {
-    margin-bottom: 30px;
   }
 }
 
