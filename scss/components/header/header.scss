@@ -73,7 +73,12 @@
           }
 
         }
+      }
 
+      a{
+        &:hover{
+          border-bottom: none;
+        }
       }
     }
 
@@ -154,6 +159,7 @@
 
       &.active {
         color: $accent-color;
+        border-bottom: 2px solid $accent-color;
       }
     }
   }
@@ -189,10 +195,6 @@
 
     .nav-link {
       color: $link-color;
-
-      &.active {
-        border-bottom: 2px solid $accent-color;
-      }
 
       &:hover {
         color: $link-color;

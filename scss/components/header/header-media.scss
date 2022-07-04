@@ -98,6 +98,10 @@
     }
 
     &-light{
+      padding: 0;
+      .header__top{
+        background-color: $bg-color;
+      }
       .navbar-toggler-icon {
         background-image: url("../assets/icons/hamburger-dark.svg");
         background-size: cover;
