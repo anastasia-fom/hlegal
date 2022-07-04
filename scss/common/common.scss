@@ -59,26 +59,16 @@ a {
     letter-spacing: 1px;
     &:hover{
       color: $accent-color;
-    }
-    svg{
-      margin-top: -3px;
-      &:hover {
-        text-decoration: none;
-        border: none;
 
-        circle {
-          stroke: $accent-color;
-        }
-
-        path {
-          stroke: $accent-color;
-        }
-
-        circle,
-        path {
-          transition: $default-transition;
-        }
+      &::after{
+        content: url("../assets/arrow-hover.svg");
       }
+    }
+
+    &::after{
+      content: url("../assets/arrow.svg");
+      width: 4.5px;
+      height: 9px;
     }
   }
 
@@ -86,11 +76,7 @@ a {
     margin-top: 10px;
     line-height: 46px;
     font-size: $font-size-2xl;
-    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+    @extend %gradient-text-color;
   }
 }
 

@@ -1,5 +1,20 @@
 .team{
+  @include desktop-lg(){
+    .carousel-item{
+      img{
+        max-height: 600px;
+      }
+    }
+
+  }
+
   @include desktop-md(){
+    .carousel-item{
+      img{
+        max-height: 500px;
+      }
+    }
+
     padding: 60px;
     &__wrapper{
       flex-direction: column;

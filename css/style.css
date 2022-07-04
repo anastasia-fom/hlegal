@@ -24,7 +24,7 @@ body {
   font-weight: bold;
 }
 
-.contact__form-first h2 {
+.contact__form-first h2, .section__title h2 {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -87,32 +87,18 @@ a {
 .section__title .section__link:hover {
   color: #F0145A;
 }
-.section__title .section__link svg {
-  margin-top: -3px;
+.section__title .section__link:hover::after {
+  content: url("../assets/arrow-hover.svg");
 }
-.section__title .section__link svg:hover {
-  text-decoration: none;
-  border: none;
-}
-.section__title .section__link svg:hover circle {
-  stroke: #F0145A;
-}
-.section__title .section__link svg:hover path {
-  stroke: #F0145A;
-}
-.section__title .section__link svg:hover circle,
-.section__title .section__link svg:hover path {
-  transition: 0.3s;
+.section__title .section__link::after {
+  content: url("../assets/arrow.svg");
+  width: 4.5px;
+  height: 9px;
 }
 .section__title h2 {
   margin-top: 10px;
   line-height: 46px;
   font-size: 38px;
-  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
 }
 
 .section__button {
@@ -614,6 +600,10 @@ input:invalid::placeholder {
 .team .carousel-item {
   background-color: #F5F5FA;
 }
+.team .carousel-item img {
+  object-fit: cover;
+  max-height: 400px;
+}
 .team .carousel-item .team__content {
   padding: 30px;
 }
@@ -642,9 +632,17 @@ input:invalid::placeholder {
   margin-bottom: -60px;
 }
 
+@media (max-width: 1024px) {
+  .team .carousel-item img {
+    max-height: 600px;
+  }
+}
 @media (max-width: 992px) {
   .team {
     padding: 60px;
+  }
+  .team .carousel-item img {
+    max-height: 500px;
   }
   .team__wrapper {
     flex-direction: column;
