@@ -24,7 +24,7 @@ body {
   font-weight: bold;
 }
 
-.contact__form-first h2, .team-people .hero h1, .section__title h2 {
+.contact__form-first h2, .hero h1, .hero h2, .about h2, .person h1, .team-people .hero h1, .service-entry__item-section h1, .article__content-accent, .benefits__item li .active, .section__title h2 {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -504,13 +504,6 @@ input:invalid::placeholder {
 }
 .benefits__item li:not(:last-child) {
   margin-bottom: 20px;
-}
-.benefits__item li .active {
-  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
 }
 .benefits__item li a {
   font-size: 38px;
@@ -1028,11 +1021,6 @@ input:invalid::placeholder {
   font-size: 38px;
   line-height: 46px;
   margin-top: 30px;
-  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
 }
 .article__content-list {
   font-size: 18px;
@@ -1111,11 +1099,6 @@ input:invalid::placeholder {
   border-radius: 24px;
 }
 .service-entry__item-section h1 {
-  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
   margin-top: 28px;
   margin-bottom: 28px;
 }
@@ -1252,13 +1235,6 @@ input:invalid::placeholder {
   border-radius: 12px;
   margin-bottom: 15px;
 }
-.person h1 {
-  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
 .person__information p {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -1340,13 +1316,6 @@ input:invalid::placeholder {
     max-width: 1080px;
   }
 }
-.about h2 {
-  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
 .about__quote {
   padding-right: 60px;
 }
@@ -1377,13 +1346,6 @@ input:invalid::placeholder {
   .hero .container {
     max-width: 1080px;
   }
-}
-.hero h1, .hero h2 {
-  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
 }
 .hero h2 {
   font-size: 36px;
