@@ -24,7 +24,7 @@ body {
   font-weight: bold;
 }
 
-.contact__form-first h2, .section__title h2 {
+.contact__form-first h2, .team-people .hero h1, .section__title h2 {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -632,7 +632,6 @@ input:invalid::placeholder {
 }
 .services__items-section p {
   color: #FFFFFF;
-  width: 350px;
 }
 .services-page {
   padding-top: 100px;
@@ -640,7 +639,7 @@ input:invalid::placeholder {
 
 @media (max-width: 1024px) {
   .services__items p {
-    width: initial;
+    width: 100%;
   }
 }
 @media (max-width: 992px) {
@@ -1173,11 +1172,6 @@ input:invalid::placeholder {
   }
 }
 .team-people .hero h1 {
-  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
   font-size: 38px;
   line-height: 46px;
 }
@@ -1223,6 +1217,12 @@ input:invalid::placeholder {
 }
 
 @media (max-width: 992px) {
+  .team-people {
+    padding: 0 0 60px 0;
+  }
+  .team-people .hero {
+    padding: 0;
+  }
   .team-people__list {
     gap: 60px;
   }
@@ -1463,7 +1463,6 @@ input:invalid::placeholder {
     font-size: 36px;
     line-height: 44px;
     max-height: 115px;
-    height: 100%;
   }
 }
 
