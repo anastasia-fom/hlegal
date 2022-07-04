@@ -1055,6 +1055,12 @@ input:invalid::placeholder {
   margin-right: 10px;
 }
 
+@media (max-width: 575px) {
+  .article {
+    padding: 30px;
+  }
+}
+
 .service-entry {
   color: #fff;
   margin-bottom: 60px;

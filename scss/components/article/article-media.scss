@@ -1,0 +1,5 @@
+.article{
+  @include desktop-sm(){
+    padding: 30px;
+  }
+}
