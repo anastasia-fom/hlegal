@@ -75,8 +75,8 @@
         }
       }
 
-      a{
-        &:hover{
+      a {
+        &:hover {
           border-bottom: none;
         }
       }
@@ -138,88 +138,101 @@
 
 
   &__navigation {
-    .navbar-nav {
-      display: flex;
-      gap: 15px;
-      margin-top: 34px;
+
+    .navbar__wrapper{
+      padding: 0;
     }
 
-    .nav-link {
-      border-bottom: 2px solid;
-      padding-bottom: 3px;
-
-      &:not(.active) {
-        border-bottom-color: transparent;
+    .navbar-collapse {
+      #close {
+        display: none;
+        visibility: hidden;
+        margin-bottom: 0;
       }
 
-      &:hover {
-        border-bottom-color: initial;
-        transition: $default-transition;
+      .navbar-nav {
+        display: flex;
+        gap: 15px;
       }
 
-      &.active {
-        color: $accent-color;
-        border-bottom: 2px solid $accent-color;
-      }
-    }
-  }
+      .nav-link {
+        border-bottom: 2px solid;
+        padding-bottom: 3px;
 
-  a.navbar-brand{
-    border-bottom: none;
-  }
+        &:not(.active) {
+          border-bottom-color: transparent;
+        }
 
-  &-light {
-    color: $text-color;
-    --bs-link-color: #{$text-color};
-    background-color: $main-font-color;
-    position: initial;
-    padding: 0 0 30px 0;
+        &:hover {
+          border-bottom-color: initial;
+          transition: $default-transition;
+        }
 
-    &__lang {
-      &-switcher:checked + &-name {
-        color: $main-font-color;
-      }
-    }
-
-    &__top {
-      &-content {
-        & > div {
-          &:not(:last-child) {
-            &:after {
-              background-color: $separator-color;
-            }
-          }
+        &.active {
+          color: $accent-color;
+          border-bottom: 2px solid $accent-color;
         }
       }
     }
+  }
 
-    .nav-link {
-      color: $link-color;
-
-      &:hover {
-        color: $link-color;
-      }
+    a.navbar-brand {
+      border-bottom: none;
     }
 
-    a {
-      &:not(.social-link) {
+    &-light {
+      color: $text-color;
+      --bs-link-color: #{$text-color};
+      background-color: $main-font-color;
+      position: initial;
+      padding: 0 0 30px 0;
+
+      &__lang {
+        &-switcher:checked + &-name {
+          color: $main-font-color;
+        }
+      }
+
+      &__top {
+        &-content {
+          & > div {
+            &:not(:last-child) {
+              &:after {
+                background-color: $separator-color;
+              }
+            }
+          }
+        }
+
+      }
+
+      .nav-link {
+        color: $link-color;
+
         &:hover {
           color: $link-color;
         }
       }
 
-      &.social-link {
-        path {
-          fill: $text-color;
+      a {
+        &:not(.social-link) {
+          &:hover {
+            color: $link-color;
+          }
         }
 
-        &:hover {
+        &.social-link {
           path {
-            fill: $accent-color;
-            transition: $default-transition;
+            fill: $text-color;
+          }
+
+          &:hover {
+            path {
+              fill: $accent-color;
+              transition: $default-transition;
+            }
           }
         }
       }
     }
-  }
 }
